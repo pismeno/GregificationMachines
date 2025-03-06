@@ -4,7 +4,7 @@
     "description": "Some extra machines for GTCEu, mainly meant for Gregification modpack by Pismeno",
     "version": "${version}",
     "mcversion": "${mcversion}",
-    "logoFile": "",
+    "logoFile": "assets/gfmachines/textures/long.png",
     "url": "",
     "authorList": [
     "Pismeno"

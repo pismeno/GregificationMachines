@@ -1,2 +1,10 @@
 gregtech.machine.steam_saw_bronze.name=Steam Saw
 gregtech.machine.steam_saw_steel.name=High Pressure Steam Saw
+gregtech.machine.saw.lv.name=Basic Saw
+gregtech.machine.saw.mv.name=Advanced Saw
+gregtech.machine.saw.hv.name=Advanced Saw II
+gregtech.machine.saw.ev.name=Advanced Saw III
+gregtech.machine.saw.iv.name=Elite Saw
+gregtech.machine.saw.luv.name=Elite Saw II
+gregtech.machine.saw.zpm.name=Elite Saw III
+gregtech.machine.saw.uv.name=Ultimate Saw
