@@ -27,7 +27,7 @@ public class SteamSaw extends SteamMetaTileEntity {
 
     @Override
     public MetaTileEntity createMetaTileEntity(IGregTechTileEntity tileEntity) {
-        return new gregtech.common.metatileentities.steam.SteamExtractor(metaTileEntityId, isHighPressure);
+        return new SteamSaw(metaTileEntityId, isHighPressure);
     }
 
     @Override
