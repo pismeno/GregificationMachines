@@ -1,0 +1,17 @@
+[{
+    "modid": "${modid}",
+    "name": "${modname}",
+    "description": "Some extra machines for GTCEu, mainly meant for Gregification modpack by Pismeno",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "logoFile": "",
+    "url": "",
+    "authorList": [
+    "Pismeno"
+    ],
+    "credits": "GTCEu for their awesome work on the mod and buildscipts etc., and their community for helping me",
+  "dependencies": [
+    "codechickenlib",
+    "gregtech"
+    ]
+}]

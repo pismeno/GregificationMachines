@@ -1,0 +1,10 @@
+// Add any additional repositories for your dependencies here
+
+repositories {
+    mavenCentral() // Adds the official Maven Central repository
+
+    maven {
+        name = "GTCEu Maven"
+        url = "https://maven.gtceu.com"
+    }
+}
