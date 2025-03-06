@@ -14,6 +14,7 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import pismeno.gfmachines.common.metatileentities.MetaTileEntities;
 
 @Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.12.2]")
 public class MyMod {
@@ -49,6 +50,7 @@ public class MyMod {
     @EventHandler
     // load "Do your mod setup. Build whatever data structures you care about." (Remove if not needed)
     public void init(FMLInitializationEvent event) {
+        MetaTileEntities.init();
     }
 
     @EventHandler
