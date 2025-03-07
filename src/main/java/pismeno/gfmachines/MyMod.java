@@ -32,38 +32,10 @@ public class MyMod {
         LOGGER.info("Textures pre initialized");
     }
 
-    @SubscribeEvent
-    // Register recipes here (Remove if not needed)
-    public void registerRecipes(RegistryEvent.Register<IRecipe> event) {
-
-    }
-
-    @SubscribeEvent
-    // Register items here (Remove if not needed)
-    public void registerItems(RegistryEvent.Register<Item> event) {
-
-    }
-
-    @SubscribeEvent
-    // Register blocks here (Remove if not needed)
-    public void registerBlocks(RegistryEvent.Register<Block> event) {
-
-    }
-
     @EventHandler
     // load "Do your mod setup. Build whatever data structures you care about." (Remove if not needed)
     public void init(FMLInitializationEvent event) {
         MetaTileEntities.init();
         LOGGER.info("Meta Tile Entities initialized");
-    }
-
-    @EventHandler
-    // postInit "Handle interaction with other mods, complete your setup based on this." (Remove if not needed)
-    public void postInit(FMLPostInitializationEvent event) {
-    }
-
-    @EventHandler
-    // register server commands in this event handler (Remove if not needed)
-    public void serverStarting(FMLServerStartingEvent event) {
     }
 }

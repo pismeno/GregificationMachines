@@ -9,7 +9,7 @@ import stanhebben.zenscript.annotations.ZenProperty;
 
 public class RecipeMaps {
     @ZenProperty
-    public static final RecipeMap<SimpleRecipeBuilder> SAW_RECIPES = new RecipeMap<>("saw", 1, 1, 0, 0,
+    public static final RecipeMap<SimpleRecipeBuilder> SAW_RECIPES = new RecipeMap<>("saw", 1, 3, 0, 0,
             new SimpleRecipeBuilder().duration(200).EUt(2), false)
             .setSlotOverlay(false, false, GuiTexturesHere.SAW_OVERLAY)
             .setProgressBar(GuiTexturesHere.PROGRESS_BAR_SAW, ProgressWidget.MoveType.HORIZONTAL)
