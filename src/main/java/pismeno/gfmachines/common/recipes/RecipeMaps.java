@@ -19,6 +19,6 @@ public class RecipeMaps {
                    .setSlotOverlay(false, false, false, GuiTexturesHere.SAW_OVERLAY)
                    .setSlotOverlay(false, false, true, GuiTextures.INT_CIRCUIT_OVERLAY)
                 .setProgressBar(GuiTexturesHere.PROGRESS_BAR_SAW, ProgressWidget.MoveType.HORIZONTAL)
-                .setSound(GTSoundEvents.COMPRESSOR);
+                .setSound(GTSoundEvents.CUT);
     }
 }
