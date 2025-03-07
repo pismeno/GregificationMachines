@@ -24,6 +24,6 @@ public class MetaTileEntities {
         STEAM_SAW_STEEL = registerMetaTileEntity(11001, new SteamSaw(gregtechId("steam_saw_steel"), true));
 
         registerSimpleMetaTileEntity(SAW, 11002, "saw", RecipeMaps.SAW_RECIPES,
-                Textures.SAW_OVERLAY, true, machineName -> new ResourceLocation(GTValues.MODID, machineName)  , tier -> 0);
+                Textures.SAW_OVERLAY, true, machineName -> new ResourceLocation(GTValues.MODID, machineName)  , fluidTank -> 0);
     }
 }
