@@ -53,6 +53,11 @@ public class SteamSaw extends SteamMetaTileEntity {
                 .build(getHolder(), player);
     }
 
+    @Override
+    public int getItemOutputLimit() {
+        return 1;
+    }
+
     @SideOnly(Side.CLIENT)
     @Override
     public void randomDisplayTick() {

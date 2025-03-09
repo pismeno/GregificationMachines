@@ -6,11 +6,11 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
+import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import pismeno.gfmachines.client.Textures;
-import pismeno.gfmachines.common.items.ToolItems;
 import pismeno.gfmachines.common.metatileentities.MetaTileEntities;
 import pismeno.gfmachines.common.recipes.RecipeMaps;
 
@@ -27,7 +27,6 @@ public class GfMachines {
         LOGGER.info("Recognized " + Tags.MODNAME + " + at version " + Tags.VERSION);
         Textures.preInit();
         RecipeMaps.preInit();
-        ToolItems.init();
         LOGGER.info("Textures pre initialized");
     }
 
@@ -36,5 +35,9 @@ public class GfMachines {
     public void init(FMLInitializationEvent event) {
         MetaTileEntities.init();
         LOGGER.info("Meta Tile Entities initialized");
+        /*MaterialProperties.registerOreDict();
+        MinecraftForge.EVENT_BUS.register(MaterialProperties.class);
+        MaterialProperties.registerModels();
+        MaterialProperties.registerColors();*/
     }
 }
