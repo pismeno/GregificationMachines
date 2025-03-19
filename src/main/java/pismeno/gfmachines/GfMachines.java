@@ -1,6 +1,8 @@
 package pismeno.gfmachines;
 
+import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -10,6 +12,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import org.spongepowered.asm.launch.MixinBootstrap;
+import org.spongepowered.asm.mixin.Mixins;
 import pismeno.gfmachines.client.Textures;
 import pismeno.gfmachines.common.metatileentities.MetaTileEntities;
 import pismeno.gfmachines.common.recipes.RecipeMaps;
@@ -35,9 +39,5 @@ public class GfMachines {
     public void init(FMLInitializationEvent event) {
         MetaTileEntities.init();
         LOGGER.info("Meta Tile Entities initialized");
-        /*MaterialProperties.registerOreDict();
-        MinecraftForge.EVENT_BUS.register(MaterialProperties.class);
-        MaterialProperties.registerModels();
-        MaterialProperties.registerColors();*/
     }
 }

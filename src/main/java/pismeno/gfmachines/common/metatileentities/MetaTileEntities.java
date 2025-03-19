@@ -3,6 +3,7 @@ package pismeno.gfmachines.common.metatileentities;
 import gregtech.api.GTValues;
 import gregtech.api.metatileentity.SimpleMachineMetaTileEntity;
 
+import gregtech.common.metatileentities.multi.electric.MetaTileEntityImplosionCompressor;
 import net.minecraft.util.ResourceLocation;
 import pismeno.gfmachines.Tags;
 import pismeno.gfmachines.common.recipes.RecipeMaps;
@@ -18,6 +19,7 @@ public class MetaTileEntities {
 
     public static SteamSaw STEAM_SAW_BRONZE;
     public static SteamSaw STEAM_SAW_STEEL;
+    public static LaserFabricator LASER_FABRICATOR;
 
     public static void init() {
         STEAM_SAW_BRONZE = registerMetaTileEntity(11000, new SteamSaw(gregtechId("steam_saw_bronze"), false));
@@ -25,5 +27,8 @@ public class MetaTileEntities {
 
         registerSimpleMetaTileEntity(SAW, 11002, "saw", RecipeMaps.SAW_RECIPES,
                 Textures.SAW_OVERLAY, true, machineName -> new ResourceLocation(GTValues.MODID, machineName)  , fluidTank -> 0);
+
+        LASER_FABRICATOR = registerMetaTileEntity(11011,
+                new LaserFabricator(gregtechId("laser_fabricator")));
     }
 }

@@ -8,4 +8,6 @@ gregtech.machine.saw.iv.name=Elite Saw
 gregtech.machine.saw.luv.name=Elite Saw II
 gregtech.machine.saw.zpm.name=Elite Saw III
 gregtech.machine.saw.uv.name=Ultimate Saw
+gregtech.machine.laser_fabricator.name=Laser Fabricator
 recipemap.saw.name=Saw
+recipemap.laser_fabricator.name=Laser Fabricator
