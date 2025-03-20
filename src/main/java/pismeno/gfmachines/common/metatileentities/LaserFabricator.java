@@ -50,7 +50,7 @@ public class LaserFabricator extends RecipeMapMultiblockController {
     @SideOnly(Side.CLIENT)
     @Override
     public ICubeRenderer getBaseTexture(IMultiblockPart sourcePart) {
-        return gregtech.client.renderer.texture.Textures.VOLTAGE_CASINGS[3];
+        return gregtech.client.renderer.texture.Textures.CLEAN_STAINLESS_STEEL_CASING;
     }
 
     @SideOnly(Side.CLIENT)
