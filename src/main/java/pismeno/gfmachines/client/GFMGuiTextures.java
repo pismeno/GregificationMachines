@@ -3,7 +3,7 @@ package pismeno.gfmachines.client;
 import gregtech.api.gui.resources.SteamTexture;
 import gregtech.api.gui.resources.TextureArea;
 
-public class GuiTexturesHere {
+public class GFMGuiTextures {
     public static final TextureArea SAW_OVERLAY = TextureArea
             .fullImage("textures/gui/overlay/saw_overlay.png");
     public static final SteamTexture SAW_OVERLAY_STEAM = SteamTexture

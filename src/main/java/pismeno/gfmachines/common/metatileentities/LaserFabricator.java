@@ -19,13 +19,13 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import org.jetbrains.annotations.NotNull;
-import pismeno.gfmachines.client.Textures;
-import pismeno.gfmachines.common.recipes.RecipeMaps;
+import pismeno.gfmachines.client.GFMTextures;
+import pismeno.gfmachines.common.recipes.GFMRecipeMaps;
 
 public class LaserFabricator extends RecipeMapMultiblockController {
 
     public LaserFabricator(ResourceLocation metaTileEntityId) {
-        super(metaTileEntityId, RecipeMaps.LASER_FABRICATOR_RECIPES);
+        super(metaTileEntityId, GFMRecipeMaps.LASER_FABRICATOR_RECIPES);
     }
 
     @Override
@@ -57,21 +57,11 @@ public class LaserFabricator extends RecipeMapMultiblockController {
     @NotNull
     @Override
     protected ICubeRenderer getFrontOverlay() {
-        return Textures.LASER_FABRICATOR_OVERLAY;
+        return GFMTextures.LASER_FABRICATOR_OVERLAY;
     }
 
     @Override
     public SoundEvent getBreakdownSound() {
         return GTSoundEvents.BREAKDOWN_MECHANICAL;
-    }
-
-    @Override
-    public boolean hasMufflerMechanics() {
-        return true;
-    }
-
-    @Override
-    public boolean canBeDistinct() {
-        return true;
     }
 }

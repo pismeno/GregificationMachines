@@ -16,14 +16,14 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.items.IItemHandlerModifiable;
 
-import pismeno.gfmachines.client.GuiTexturesHere;
-import pismeno.gfmachines.client.Textures;
-import pismeno.gfmachines.common.recipes.RecipeMaps;
+import pismeno.gfmachines.client.GFMGuiTextures;
+import pismeno.gfmachines.client.GFMTextures;
+import pismeno.gfmachines.common.recipes.GFMRecipeMaps;
 
 public class SteamSaw extends SteamMetaTileEntity {
 
     public SteamSaw(ResourceLocation metaTileEntityId, boolean isHighPressure) {
-        super(metaTileEntityId, RecipeMaps.SAW_RECIPES, Textures.SAW_OVERLAY, isHighPressure);
+        super(metaTileEntityId, GFMRecipeMaps.SAW_RECIPES, GFMTextures.SAW_OVERLAY, isHighPressure);
     }
 
     @Override
@@ -45,9 +45,9 @@ public class SteamSaw extends SteamMetaTileEntity {
     public ModularUI createUI(EntityPlayer player) {
         return createUITemplate(player)
                 .slot(this.importItems, 0, 53, 25, GuiTextures.SLOT_STEAM.get(isHighPressure),
-                        GuiTexturesHere.SAW_OVERLAY_STEAM.get(isHighPressure))
+                        GFMGuiTextures.SAW_OVERLAY_STEAM.get(isHighPressure))
                 .progressBar(workableHandler::getProgressPercent, 79, 25, 20, 18,
-                        GuiTexturesHere.PROGRESS_BAR_SAW_STEAM.get(isHighPressure), MoveType.HORIZONTAL,
+                        GFMGuiTextures.PROGRESS_BAR_SAW_STEAM.get(isHighPressure), MoveType.HORIZONTAL,
                         workableHandler.getRecipeMap())
                 .slot(this.exportItems, 0, 107, 25, true, false, GuiTextures.SLOT_STEAM.get(isHighPressure))
                 .build(getHolder(), player);

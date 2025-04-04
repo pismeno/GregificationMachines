@@ -1,9 +1,8 @@
 package pismeno.gfmachines.client;
 
-import gregtech.api.unification.material.info.MaterialIconSet;
 import gregtech.client.renderer.texture.cube.OrientedOverlayRenderer;
 
-public class Textures {
+public class GFMTextures {
     public static OrientedOverlayRenderer SAW_OVERLAY;
     public static OrientedOverlayRenderer LASER_FABRICATOR_OVERLAY;
 
